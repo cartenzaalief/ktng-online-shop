@@ -1,7 +1,6 @@
-import { Box, Button, ButtonGroup, Divider, Flex, Icon, Image, Input, InputGroup, InputLeftElement, Text } from "@chakra-ui/react"
+import { Box, Button, ButtonGroup, Divider, Flex, Icon, Input, InputGroup, InputLeftElement, Text } from "@chakra-ui/react"
 import { HiShoppingCart } from "react-icons/hi"
 import { GoSearch } from "react-icons/go"
-import Logo from "../assets/images/KT&G_Logo.png"
 import { useNavigate } from "react-router-dom"
 
 const Navbar = (props) => {
@@ -19,7 +18,7 @@ const Navbar = (props) => {
                 </Flex>
             </Flex>
             <Flex py={2} px={6} justifyContent="space-between" alignItems="center" gap={6}>
-                <Image src={Logo} h={22} objectFit="contain" mt={-1} onClick={() => navigate("/")} cursor="pointer" />
+                <Text mt={-1} fontSize="xl" fontWeight="bold" color="blue.400" onClick={() => navigate("/")} cursor="pointer">KOS</Text>
                 <InputGroup>
                     <InputLeftElement>
                         <Icon as={GoSearch} color="gray.600" mt={-1} />
