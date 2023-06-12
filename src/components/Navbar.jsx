@@ -21,7 +21,7 @@ const Navbar = (props) => {
                 <Text mt={-1} fontSize="xl" fontWeight="bold" color="blue.400" onClick={() => navigate("/")} cursor="pointer">KOS</Text>
                 <InputGroup>
                     <InputLeftElement>
-                        <Icon as={GoSearch} color="gray.600" mt={-1} />
+                        <Icon as={GoSearch} color="gray.600" mt={-2} />
                     </InputLeftElement>
                     <Input placeholder="Search" size="sm" borderRadius={8} />
                 </InputGroup>
