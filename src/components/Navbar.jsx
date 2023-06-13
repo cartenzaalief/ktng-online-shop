@@ -28,7 +28,7 @@ const Navbar = (props) => {
                     <Input placeholder="Search" size="sm" borderRadius={8} />
                 </InputGroup>
                 <Flex alignItems="center" h={8} gap={4}>
-                    <Icon as={HiShoppingCart} boxSize={6} color="gray.600" />
+                    <Icon as={HiShoppingCart} boxSize={6} color="gray.600" onClick={() => navigate("/cart")} cursor="pointer" />
                     <Divider orientation="vertical" />
                     <ButtonGroup>
                         <Button variant="outline" colorScheme="blue" size="sm">Sign In</Button>
@@ -42,7 +42,7 @@ const Navbar = (props) => {
                 <Flex py={2} px={8} justifyContent="space-between" alignItems="center" gap={6}>
                     <Text mt={-1} fontSize="xl" fontWeight="bold" color="blue.400" onClick={() => navigate("/")} cursor="pointer">KOS</Text>
                     <Flex alignItems="center" h={8} gap={4}>
-                        <Icon as={HiShoppingCart} boxSize={6} color="gray.600" />
+                        <Icon as={HiShoppingCart} boxSize={6} color="gray.600" onClick={() => navigate("/cart")} cursor="pointer" />
                         <Divider orientation="vertical" />
                         <ButtonGroup>
                             <Button variant="outline" colorScheme="blue" size="sm">Sign In</Button>
