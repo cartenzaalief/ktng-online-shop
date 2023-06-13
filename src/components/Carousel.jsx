@@ -19,9 +19,9 @@ const Carousel = (props) => {
 
     return (
         <Slider {...settings}>
-            <Image src={banner1} h={[200, 300, 400]} borderRadius={12} />
-            <Image src={banner2} h={[200, 300, 400]} borderRadius={12} />
-            <Image src={banner3} h={[200, 300, 400]} borderRadius={12} />
+            <Image src={banner1} h={[200, 300]} borderRadius={12} />
+            <Image src={banner2} h={[200, 300]} borderRadius={12} />
+            <Image src={banner3} h={[200, 300]} borderRadius={12} />
         </Slider>
     )
 }
