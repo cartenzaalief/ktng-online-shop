@@ -8,8 +8,8 @@ const Cart = (props) => {
 
     return (
         <Box px={[8, 16, 24, 48]} py={6}>
-            <Grid templateColumns="repeat(5, 1fr)" gap={16}>
-                <GridItem colSpan={3}>
+            <Grid templateColumns={["repeat(1, 1fr)", null, null, "repeat(5, 1fr)"]} gap={[8, null, null, 16]}>
+                <GridItem colSpan={[1, null, null, 3]}>
                     <Text fontSize="2xl" fontWeight="bold">Cart</Text>
                     <Box mt={4} bgColor="#F3F4F5" h={1.5}></Box>
                     {productsCart.map((val) => {
@@ -18,7 +18,7 @@ const Cart = (props) => {
                         )
                     })}
                 </GridItem>
-                <GridItem colSpan={2}>
+                <GridItem colSpan={[1, null, null, 2]}>
                     <CartSummary />
                 </GridItem>
             </Grid>

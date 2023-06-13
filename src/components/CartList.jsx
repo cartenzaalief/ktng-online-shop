@@ -17,7 +17,7 @@ const CartList = (props) => {
                     </Flex>
                     <Flex justifyContent="space-between" alignItems="center" mt={2}>
                         <Text fontSize="sm" color="blue.500" cursor="pointer">Add Notes</Text>
-                        <Flex justifyContent="flex-end" gap={16} alignItems="center">
+                        <Flex justifyContent="flex-end" gap={[2, null, 16]} alignItems="center">
                             <Flex gap={4} alignItems="center">
                                 <Text fontSize="sm" color="gray.500" cursor="pointer">Move to wishlist</Text>
                                 <Box bgColor="gray.300" h={7} w={0.5}></Box>
