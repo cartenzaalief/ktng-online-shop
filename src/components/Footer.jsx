@@ -4,9 +4,9 @@ import Logo from "../assets/images/KT&G_Logo.png"
 
 const Footer = (props) => {
     return (
-        <Box borderTop="1px" borderColor="gray.400" px={32} py={8}>
-            <Flex justifyContent="space-between">
-                <Flex gap={24}>
+        <Box borderTop="1px" borderColor="gray.400" px={[8, null, 32]} py={8}>
+            <Flex justifyContent={["center", null, null, "space-between"]}>
+                <Flex gap={24} display={["none", null, null, "flex"]}>
                     <Stack>
                         <Text fontWeight="bold">KT&G</Text>
                         <Text color="gray.500">About KT&G</Text>
