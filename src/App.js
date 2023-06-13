@@ -8,10 +8,12 @@ function App() {
   return (
     <Box>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-      </Routes>
-      <Footer />
+      <Box mt={20}>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+        </Routes>
+        <Footer />
+      </Box>
     </Box>
   );
 }

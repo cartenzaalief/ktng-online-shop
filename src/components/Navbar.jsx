@@ -7,7 +7,7 @@ const Navbar = (props) => {
     const navigate = useNavigate()
 
     return (
-        <Box shadow="sm">
+        <Box shadow="sm" w="100%" position="fixed" top={0} zIndex={1} bgColor="white">
             <Flex justifyContent="space-between" bg="#F3F4F5" py={1} px={8} display={["none", null, "flex"]}>
                 <Text color="gray.500" fontSize="sm" cursor="pointer">KT&G Online Shop</Text>
                 <Flex gap={6}>
